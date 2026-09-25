@@ -33,10 +33,6 @@ test(
       await page.getByRole("textbox", { name: "Username", exact: true }).click();
     });
 
-    await test.step('#07 - Click on the main section containing \'LoginAccepted usernames\' text', async () => {
-      await page.getByRole("main").filter({ hasText: "LoginAccepted usernames" }).click();
-    });
-
   }
 );
 
